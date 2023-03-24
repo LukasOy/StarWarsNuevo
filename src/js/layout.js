@@ -3,6 +3,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
+import { Planetas } from "./views/Planeta";
+import { Personajes } from "./views/Personajes";
+import { DetallePersona } from "./views/DetallePersona";
+import { DetallePlaneta } from "./views/DetallePlaneta"; 
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
