@@ -25,16 +25,7 @@ export const Navbar = (props) => {
               <i className="fa-solid fa-heart"></i>
             </button>
             <ul className="dropdown-menu dropdown-menu-dark">
-              {store.favorites.map((value, index) => {
-                return (
-                  <li key={index} className="dropdown-item d-flex justify-content-between">
-                    {value}
-                    <button className="btn btn-sm btn-outline-danger" onClick={() => actions.ElimFavor(index)}>
-                      Eliminar
-                    </button>
-                  </li>
-                );
-              })}
+            
             </ul>
           </li>
         </ul>

@@ -4,8 +4,6 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Planetas } from "./views/Planeta";
-import { Personajes } from "./views/Personajes";
-import { DetallePersona } from "./views/DetallePersona";
 import { DetallePlaneta } from "./views/DetallePlaneta"; 
 import injectContext from "./store/appContext";
 
@@ -26,8 +24,7 @@ const Layout = () => {
 					<Routes>						
 						<Route path="/" element={<Home />} />
 						<Route path="/planetas" element={<Planetas />} />
-						<Route path="/personaje" element={<Personajes />} />
-						<Route path="/detalle/DetallePersona/:id" element={<DetallePersona />} />
+					
 						<Route path="/detalle/DetallePlaneta/:id" element={<DetallePlaneta />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>

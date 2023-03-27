@@ -5,7 +5,7 @@ import gg2 from "../../img/gg2.jpg";
 import gg3 from "../../img/gg3.jpg"; */
 import "../../styles/home.css";
 import { Cards } from "../component/cards";
-import { LongCards } from "../component/cards";
+import { LongCards } from "../component/longcards";
 
 export const Home = () => {
 
@@ -26,13 +26,7 @@ export const Home = () => {
       <div className="text-center">
         <h1>Personajes </h1>
         <div className="row">
-        {store.PersonDetalle.map((objeto, index)=>{
-        
-        return (
-        <Cards title={objeto.name} id={objeto.uid} ruta={"/detalle/persondetalle/"+ objeto.uid} boton="Learn More!"/>
-        
-        )
-        })}
+       
         </div>
       </div> 
     </div>
